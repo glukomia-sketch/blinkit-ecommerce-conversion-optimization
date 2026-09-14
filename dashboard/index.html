@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blinkit E-commerce Conversion Dashboard</title>
+<style>
+:root{--ink:#17212b;--muted:#68737d;--line:#e5e9ed;--bg:#f6f8fa;--card:#fff;--accent:#f4c430;--accent2:#0f766e;--danger:#c2410c;--shadow:0 8px 24px rgba(23,33,43,.07)}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink)}
+.wrap{max-width:1280px;margin:0 auto;padding:28px}.header{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:22px}.title{font-size:28px;font-weight:800;letter-spacing:-.4px}.sub{color:var(--muted);margin-top:6px;font-size:14px}.badge{background:#fff7cc;border:1px solid #ead37a;padding:8px 12px;border-radius:999px;font-size:12px;font-weight:700;color:#705b00;white-space:nowrap}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}.kpi{padding:18px}.klabel{font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.6px}.kval{font-size:29px;font-weight:800;margin-top:8px}.hint{font-size:12px;color:var(--muted);margin-top:5px}
+.grid2{display:grid;grid-template-columns:1.55fr 1fr;gap:14px;margin-top:14px}.panel{padding:18px}.ptitle{font-size:16px;font-weight:800}.pdesc{font-size:12px;color:var(--muted);margin:4px 0 14px}.funnel{display:grid;gap:8px}.stage{display:grid;grid-template-columns:150px 1fr 80px;align-items:center;gap:10px;font-size:12px}.barbg{height:27px;background:#eef1f3;border-radius:6px;overflow:hidden}.bar{height:100%;display:flex;align-items:center;padding-left:9px;font-weight:800;font-size:11px;background:var(--accent);color:#4c3e00}.stage .pct{text-align:right;font-weight:800}.callout{margin-top:14px;padding:12px 14px;border-left:4px solid var(--danger);background:#fff7f1;border-radius:8px;font-size:13px;line-height:1.45}.callout b{color:#9a3412}
+.opps{display:grid;gap:10px}.opp{border:1px solid var(--line);border-radius:10px;padding:13px}.opphead{display:flex;justify-content:space-between;gap:10px;font-weight:800}.tag{font-size:10px;padding:4px 7px;border-radius:999px;background:#eef7f5;color:#12665f}.opp p{margin:7px 0 0;color:var(--muted);font-size:12px;line-height:1.45}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:14px}.bars{display:grid;gap:10px}.row{display:grid;grid-template-columns:125px 1fr 48px;gap:8px;align-items:center;font-size:12px}.track{height:10px;background:#edf0f2;border-radius:6px;overflow:hidden}.fill{height:100%;background:var(--accent2)}
+.rice table{width:100%;border-collapse:collapse;font-size:12px}.rice th,.rice td{padding:8px 5px;border-bottom:1px solid var(--line);text-align:left}.rice th{color:var(--muted);font-weight:700}.score{font-weight:800}.footer{margin-top:16px;color:#7a838c;font-size:11px;line-height:1.5}
+@media(max-width:900px){.grid4,.grid3,.grid2{grid-template-columns:1fr}.header{display:block}.badge{display:inline-block;margin-top:12px}.stage{grid-template-columns:125px 1fr 65px}}
+</style></head>
+<body><div class="wrap">
+<div class="header"><div><div class="title">Blinkit E-commerce Conversion Optimization</div><div class="sub">Executive product analytics dashboard · funnel, friction points & opportunity prioritization</div></div><div class="badge">PORTFOLIO / SYNTHETIC DATA</div></div>
+<div class="grid4">
+<div class="card kpi"><div class="klabel">Unique Users</div><div class="kval">5,000</div><div class="hint">App-open users</div></div>
+<div class="card kpi"><div class="klabel">Sessions</div><div class="kval">7,043</div><div class="hint">Distinct user sessions</div></div>
+<div class="card kpi"><div class="klabel">Purchase Conversion</div><div class="kval">24.68%</div><div class="hint">Purchase users / app-open users</div></div>
+<div class="card kpi"><div class="klabel">Purchase Value</div><div class="kval">892.4K</div><div class="hint">Dataset currency · purchase events</div></div>
+</div>
+<div class="grid2">
+<div class="card panel"><div class="ptitle">Customer Funnel</div><div class="pdesc">User-level progression from app open to purchase</div><div class="funnel">
+<div class="stage"><b>App Open</b><div class="barbg"><div class="bar" style="width:100%">5,000</div></div><div class="pct">100%</div></div>
+<div class="stage"><b>Search</b><div class="barbg"><div class="bar" style="width:80.48%">4,024</div></div><div class="pct">80.48%</div></div>
+<div class="stage"><b>Product View</b><div class="barbg"><div class="bar" style="width:65.74%">3,287</div></div><div class="pct">65.74%</div></div>
+<div class="stage"><b>Add to Cart</b><div class="barbg"><div class="bar" style="width:41.44%">2,072</div></div><div class="pct">41.44%</div></div>
+<div class="stage"><b>Checkout Start</b><div class="barbg"><div class="bar" style="width:31.78%">1,589</div></div><div class="pct">31.78%</div></div>
+<div class="stage"><b>Payment Attempt</b><div class="barbg"><div class="bar" style="width:28.72%">1,436</div></div><div class="pct">28.72%</div></div>
+<div class="stage"><b>Purchase</b><div class="barbg"><div class="bar" style="width:24.68%">1,234</div></div><div class="pct">24.68%</div></div>
+</div><div class="callout"><b>Largest observed stage drop:</b> Product View → Add to Cart = <b>36.96%</b>. This is the clearest discovery/product-selection opportunity in the synthetic funnel.</div></div>
+<div class="card panel"><div class="ptitle">Product Opportunities</div><div class="pdesc">Insights translated into product bets</div><div class="opps">
+<div class="opp"><div class="opphead"><span>01 · QuickBuy</span><span class="tag">RICE #1</span></div><p>Streamline checkout for high-intent cart users. Primary KPI: Cart → Purchase. Prioritized first because it has a direct path to completed orders.</p></div>
+<div class="opp"><div class="opphead"><span>02 · SmartFind</span><span class="tag">RICE #2</span></div><p>Improve product discovery with intent-aware ranking, quick filters and relevant alternatives. Primary KPI: Product View → Add to Cart.</p></div>
+<div class="opp"><div class="opphead"><span>03 · Cart Price Transparency</span><span class="tag">RICE #3</span></div><p>Make final price, fees and savings clearer before checkout to reduce uncertainty and abandonment.</p></div>
+</div></div>
+</div>
+<div class="grid3">
+<div class="card panel"><div class="ptitle">Conversion by User Type</div><div class="pdesc">Returning users show stronger conversion</div><div class="bars"><div class="row"><span>Returning</span><div class="track"><div class="fill" style="width:100%"></div></div><b>24.80%</b></div><div class="row"><span>New</span><div class="track"><div class="fill" style="width:71.45%"></div></div><b>17.72%</b></div></div><div class="hint" style="margin-top:12px">Gap: +7.08 percentage points for returning users.</div></div>
+<div class="card panel"><div class="ptitle">Conversion by Device</div><div class="pdesc">Web is the lowest-converting segment</div><div class="bars"><div class="row"><span>Android</span><div class="track"><div class="fill" style="width:100%"></div></div><b>22.25%</b></div><div class="row"><span>iOS</span><div class="track"><div class="fill" style="width:91.37%"></div></div><b>20.33%</b></div><div class="row"><span>Web</span><div class="track"><div class="fill" style="width:75.64%"></div></div><b>16.83%</b></div></div><div class="hint" style="margin-top:12px">Segment signal only; not evidence of causality.</div></div>
+<div class="card panel rice"><div class="ptitle">RICE Prioritization</div><div class="pdesc">Portfolio assumptions · higher score = higher priority</div><table><tr><th>Rank</th><th>Initiative</th><th>Score</th></tr><tr><td>1</td><td>QuickBuy</td><td class="score">13.20</td></tr><tr><td>2</td><td>SmartFind</td><td class="score">11.20</td></tr><tr><td>3</td><td>Price transparency</td><td class="score">9.45</td></tr><tr><td>4</td><td>Search shortcuts</td><td class="score">7.50</td></tr></table></div>
+</div>
+<div class="card panel" style="margin-top:14px"><div class="ptitle">A/B Testing Roadmap</div><div class="pdesc">Predefined success metrics before launch</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;font-size:12px;line-height:1.5"><div><b>SmartFind</b><br>Control: existing search/ranking · Variant: SmartFind<br><b>Primary:</b> Product View → Add to Cart<br><b>Secondary:</b> Search → Product View, search reformulation, time to relevant product<br><b>Guardrail:</b> search response time</div><div><b>QuickBuy</b><br>Control: existing checkout · Variant: streamlined QuickBuy<br><b>Primary:</b> Cart → Purchase<br><b>Secondary:</b> Checkout → Purchase, completion time, abandonment, AOV<br><b>Guardrails:</b> payment failure, cancellation/refund, final-price discrepancies</div></div></div>
+<div class="footer">Data disclaimer: This is a portfolio analysis using a synthetic event dataset. Metrics are not proprietary Blinkit internal data. RICE scores are portfolio assumptions intended to demonstrate product prioritization methodology.</div>
+</div></body></html>
